@@ -1,0 +1,9 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+@if(Session["login"] != null)
+{
+    <p>Đã đăng nhập</p>
+}
+<a href="@Url.Action("Facebook", "Home")">Đăng nhập facebook</a>
+<a href="https://accounts.google.com/o/oauth2/v2/auth?client_id=557222329330-i69tbp77v43991kobt08rtv0tvtgd18f.apps.googleusercontent.com&response_type=code&scope=openid%20email%20profile&redirect_uri=https://localhost:44334/Home/About&state=abcdef">Đăng nhập google</a>
